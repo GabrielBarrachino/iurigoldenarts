@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    --bg-color: #F5F3F3;
+    --text-color: #252525;
+    --p-color: #7C7A7A;
+    --color-golden: #E0B069;
+    --gray-color: #383839;
+    --white: #f2f2f2;
+    --bg-icon-color: #D9D9D9;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    width: 100%;
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.container-desenhos{
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+
+
+/* IMAGENS CAPA E PERFIL */
+.img-capa{
+    margin-top: 20px;
+}
+
+.img-capa img{
+    width: 22rem;
+    height: 10rem;
+    object-fit: cover;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.container-perfil img{
+    width: 12rem;
+    height: 12rem;
+    margin: 0 auto;
+    position: relative;
+    top: -6.5rem;
+}
+/* IMAGENS CAPA E PERFIL */
+
+/* TEXTOS DE PERFIL */
+.texts-container{
+    margin-top: -9rem;
+    text-align: center;
+}
+
+.texts-container h2, .texts-container span{
+    font-size: 1.26rem;
+    font-weight: bold;
+    color: var(--text-color);
+    font-family: 'Dancing Script', sans-serif;
+}
+
+.texts-container span{
+    color: var(--color-golden);
+}
+
+.texts-container p{
+    font-size: .7rem;
+    font-weight: 500;
+    color: var(--p-color);
+}
+/* TEXTOS DE PERFIL */
+
+
+
+/* SOCIAL MEDIA LINKS */
+.social-media ul{
+    margin-top: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media ul li a img{
+    width: 2rem;
+    background-color: var(--bg-icon-color);
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: .3s;
+}
+
+.social-media ul li a img:hover{
+    background-color: var(--color-golden);
+}
+/* SOCIAL MEDIA LINKS */
+
+
+.container-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-top: 2.8rem;
+    gap: 30px;
+}
+
+.container-links ul li a{
+    width: 18rem;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    font-size: .8rem;
+    color: var(--white);
+    background-color: var(--gray-color);
+    box-shadow: 4px 8px 4px #25252542;
+    padding: .7rem 4rem .7rem .7rem;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+.container-links ul li a:hover{
+    background-color: #383839de;
+    transform: scale(1.03);
+}
+
+.container-links ul li a i{
+    font-size: .89rem;
+}
+/* LINKS CONTAINER */
+
+.container-desenhos p{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.container-desenhos p::after{
+    content: "";
+    display: block;
+    width: 180px;
+    height: 10px;
+    background-color: var(--color-golden);
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.desenhos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.desenhos .card-desenho{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    transition: transform .5s;
+    cursor: pointer;
+}
+
+.desenhos .card-desenho:hover {
+    transform: scale(1.1);
+}
+
+.link-desenho{
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 15px;
+    position: relative;
+    background: url(../img/desenho-quatro.jpeg) center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.overlay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay a{
+    font-size: .7rem;
+    color: var(--white);
+    background-color: var(--gray-color);
+    padding: 15px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.overlay a:hover{
+    transform: scale(1.03);
+    background-color: var(--color-golden);
+    color: var(--text-color);
+}
+
+
+/* FOOTER */
+.footer{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p{
+    color: var(--p-color);
+    margin-top: 3rem;
+    text-align: center;
+    font-size: .5rem;
+    font-weight: bold;
+}
+/* FOOTER */
+
+
+@media (max-width: 550px){
+    .container{
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .img-capa{
+        margin: 0;
+    }
+
+    .img-capa img{
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .social-media ul li a img:hover{
+        background-color: var(--bg-icon-color);
+    }
+
+    .container-links ul li a:hover{
+        background-color: var(--gray-color);
+        transform: none;
+    }
+
+    .desenhos .card-desenho:hover {
+        transform: none;
+    }
+
+    .overlay a:hover{
+        transform: none;
+        color: var(--white);
+        background-color: var(--gray-color);
+    }
+}
+
+@media (max-width: 480px){
+    .container-links ul li a{
+        width: 15rem;
+        font-size: .6rem;
+        padding: .78rem 4rem .78rem .7rem;
+    }
+
+    .container-desenhos p{
+        font-size: .8rem;
+    }
+    
+    .container-desenhos p::after{
+        width: 150px;
+        height: 10px;
+    }
+
+    .desenhos .card-desenho, .link-desenho{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .desenhos .card-desenho:hover {
+        transform: none;
+    }
+
+    .social-media ul li a img:hover{
+        background-color: var(--bg-icon-color);
+    }
+
+    .container-links ul li a:hover{
+        background-color: var(--gray-color);
+        transform: none;
+    }
+
+    .desenhos .card-desenho:hover {
+        transform: none;
+    }
+
+    .overlay a:hover{
+        transform: none;
+        color: var(--white);
+        background-color: var(--gray-color);
+    }
+}
+
+@media (max-width: 400px){
+    .container-links ul li a{
+        width: 13rem;
+        font-size: .6rem;
+        padding: .78rem 2rem .78rem .5rem;
+        gap: 80px;
+    }
+
+    .container-desenhos p{
+        font-size: .7rem;
+    }
+    
+    .container-desenhos p::after{
+        width: 130px;
+        height: 10px;
+    }
+
+    .desenhos .card-desenho, .link-desenho{
+        width: 5.5rem;
+        height: 5.5rem;
+    }
+
+    .social-media ul li a img:hover{
+        background-color: var(--bg-icon-color);
+    }
+
+    .container-links ul li a:hover{
+        background-color: var(--gray-color);
+        transform: none;
+    }
+
+    .desenhos .card-desenho:hover {
+        transform: none;
+    }
+
+    .overlay a:hover{
+        transform: none;
+        color: var(--white);
+        background-color: var(--gray-color);
+    }
+}
